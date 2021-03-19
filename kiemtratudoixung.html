@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset=utf-8 />
+    <title>JS Bin</title>
+</head>
+<body>
+<script>
+    let text = prompt("nhập 1 từ")
+    function isPalindrome(s){
+        let dem=0
+        let first=0
+        let last=s.length-1
+        while (first<last){
+            if (s[first]==s[last]){
+                dem++
+            }
+            first++
+            last--
+        }
+        return dem
+    }
+    if (isPalindrome(text)==Math.floor(text.length/2)){
+        alert("là chuỗi đối xứng")
+    }else {
+        alert("ko phải chuỗi đối xứng")
+    }
+</script>
+</body>
+</html>
